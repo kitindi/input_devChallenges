@@ -1,13 +1,100 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans JP", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.input-block {
+  color: beige;
+}
+.App {
+  max-width: 992px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 100vh;
+}
+.side-bar {
+  background: #fafbfd;
+  height: 100%;
+  padding: 1em;
+}
+.side-bar h2 {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 4em;
+}
+.side-bar h2 span {
+  color: #f7542e;
+}
+.side-bar p {
+  margin: 1em 0;
+  color: #9e9e9e;
+  padding: 0.5em 0.65em;
+  transition: background-color 0.3s;
+}
+.side-bar p:hover {
+  background: #bdbbbb;
+  padding: 0.5em 0.65em;
+  cursor: pointer;
+  color: #474747;
+}
+.side-bar .bolded {
+  color: #090f31;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.right-col {
+  padding: 1em;
+}
+.right-col .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0.5em 0;
+  gap: 1em;
+}
+.right-col .row-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0.5em 0;
+  gap: 1em;
+}
+.right-col .row-6 {
+  margin: 0.5em 0;
+}
+.right-col .row-8 {
+  margin: 0.5em 0;
+}
+textarea {
+  padding: 1em;
+}
+
+.right-col .col-title {
+  color: #474747;
+  margin: 1em 0;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.right-col p {
+  color: #4f4f4f;
+  margin: 1em 0;
+  font-size: 0.75em;
+}
+.input-control {
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 0.5em;
+}
+.input-control input {
+  padding: 0.5em 1em;
+  color: #828282;
+  border: none;
+}
+.input-control input:focus {
+  outline: none;
 }
