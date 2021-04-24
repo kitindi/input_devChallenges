@@ -94,6 +94,7 @@ textarea {
   padding: 0.5em 1em;
   color: #828282;
   border: none;
+  width: 80%;
 }
 .input-control input:focus {
   outline: none;
