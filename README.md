@@ -85,4 +85,4 @@ $ npm start
 
 ## Contact
 
-- GitHub [@kitindi](https://{https://github.com/kitindi})
+- GitHub [@kitindi](https://https://github.com/kitindi)
